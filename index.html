@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seize the day</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    
+    // Create a React Element:
+
+const element = React.createElement("p", null, "Seize the day");
+
+// Render with ReactDOM:
+
+ReactDOM.render(element, document.getElementById("root"));
+
+// Reflection: Advantages of React over traditional DOM manipulation
+        /*
+            React offers a more intuitive way to build interactive user interfaces compared to traditional DOM manipulation.
+            - Declarative Syntax: With React, you describe how your UI should look at any given point in time, and React takes care of updating the DOM to match this state. This is in contrast to imperative DOM manipulation, where you directly manipulate DOM elements to achieve the desired outcome.
+            - Component-Based Architecture: React promotes the use of reusable and composable components, making it easier to build and maintain complex UIs. Each component encapsulates its own logic and state, which enhances modularity and code reusability.
+            - Virtual DOM: React uses a virtual DOM to efficiently update the actual DOM. When changes occur, React first updates the virtual DOM, calculates the difference between the virtual DOM and the actual DOM (referred to as "diffing"), and then applies only the necessary updates to the real DOM. This approach minimizes DOM manipulations and improves performance.
+            - Unidirectional Data Flow: React follows a unidirectional data flow pattern, where data flows from parent components to child components via props. This helps maintain a clear and predictable data flow, reducing the likelihood of bugs and making the codebase easier to understand and maintain.
+            Overall, React's declarative syntax, component-based architecture, virtual DOM, and unidirectional data flow contribute to a more efficient and maintainable approach to building web applications.
+        */
+  </script>
+</html>
